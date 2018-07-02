@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  text: MyText
+  breakfast: false
+  wifi: false
+  rating: 1
+  photo: MyString
+  price: 1
+  adress: MyString
+  number: MyString
+
+two:
+  title: MyString
+  text: MyText
+  breakfast: false
+  wifi: false
+  rating: 1
+  photo: MyString
+  price: 1
+  adress: MyString
+  number: MyString

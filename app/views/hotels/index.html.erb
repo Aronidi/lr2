@@ -1,0 +1,23 @@
+<h1>Список статей</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @hotel.each do |hotel| %>
+    <tr>
+      <td><%= hotel.title %></td>
+      <td><%= hotel.text %></td>
+      <td><%= link_to 'Просмотр', hotel_path(hotel) %></td>
+      <td><%= link_to 'Редактировать', edit_hotel_path(hotel) %></td>
+      <td><%= link_to 'Destroy', hotel_path(hotel),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Новая статья', new_hotel_path %>
